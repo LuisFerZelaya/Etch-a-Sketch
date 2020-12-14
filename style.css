@@ -1,0 +1,31 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+.grid-items{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+
+}
+
+
+body{
+  background-color: rgb(248, 46, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
